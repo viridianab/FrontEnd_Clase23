@@ -1,0 +1,155 @@
+.main h2 {
+  position: relative;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 55px;
+  line-height: 70px;
+  letter-spacing: 10px;
+  width: 350px;
+}
+
+/* General */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  list-style: none;
+  color: black;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  gap: 0 70px;
+}
+
+ul {
+  display: flex;
+  gap: 0 20px;
+}
+ul li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* Section: Navbar */
+.navbar {
+  padding: 30px 20px;
+}
+.navbar .container {
+  justify-content: space-between;
+}
+.navbar .navbar-brand {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+/* Section: Main */
+.main {
+  padding: 50px 20px;
+}
+.main .column {
+  flex: 1;
+}
+.main h2::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #92f7f2;
+  height: 50px;
+  width: 250px;
+  z-index: -1;
+}
+.main p {
+  color: #8b8b8b;
+  line-height: 2;
+  max-width: 70%;
+  width: 100%;
+  margin: 25px 0;
+}
+.main img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.main .buttons {
+  display: flex;
+  gap: 0 25px;
+}
+.main .buttons .button {
+  padding: 20px 35px;
+  background-color: #03faee;
+  border: 1px dotted #000;
+  border-radius: 5px;
+}
+
+/* Section: More */
+.more .icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8f8f8;
+  border: 1px solid #000;
+  box-shadow: -5px 0 0 0 #92f7f2;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+.more .box {
+  padding: 20px 20px 100px;
+  background-color: #f8f8f8;
+  border-radius: 5px;
+}
+.more .box h6 {
+  position: relative;
+  font-size: 20px;
+  margin: 10px 0;
+  z-index: 1;
+}
+.more .box h6::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #92f7f2;
+  height: 50%;
+  width: 25px;
+  z-index: -1;
+}
+
+/* Section: Footer */
+.footer {
+  padding: 100px 20px 20px;
+}
+.footer .container {
+  justify-content: space-between;
+  align-items: center;
+}
+.footer p {
+  display: inline-block;
+}
+.footer .social a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: -5px 0 0 0 #92f7f2;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+.footer .social img {
+  height: 20px;
+  width: auto;
+}
+
+/*# sourceMappingURL=style.css.map */

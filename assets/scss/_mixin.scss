@@ -1,0 +1,14 @@
+@mixin container($justify-container) {
+    justify-content: $justify-container;
+}
+
+@mixin shadow-title($shadow-width, $shadow-height) {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: $shadow;
+    height: $shadow-height;
+    width: $shadow-width;
+    z-index: -1;
+}
